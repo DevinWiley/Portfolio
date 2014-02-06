@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+#ifndef SeatSelection_H
+#define SeatSelection_H
+
+class SeatSelection{
+		const int SEATS = 10;
+	public:
+		SeatSelection(int start, int rows){
+			sectionStart = start;
+			sectionRows = new bool*[rows];
+			sectionNum = rows;
+			for (int i = 0; i < rows; i++){
+				sectionRows[i] = new bool[SEATS];
+				for (int j = 0; j < SEATS; j++){
+					sectionRows[i][j] = false;
+				}
+			}
+		}
+		~SeatSelection() {
+			for (int i = 0; i < sectionNum; i++){
+				delete [] sectionRows[i];
+			}
+			delete [] sectionRows;
+		}
+		bool findSeats(int);
+		void assignSeats();
+	private:
+		bool **sectionRows;
+		int sectionStart, sectionNum;
+};
+
+#endif

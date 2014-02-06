@@ -1,0 +1,106 @@
+1
+0	//load 0 into AC
+10	//store 0 into X
+21	//CountElements: load value at operand + X into AC
+93
+15	//goto endcounting
+10
+19	//element is not end of list: increase count of elements
+14	//goto CountElements
+3
+12	//EndCounting: move value in X(number of elements) to AC
+3	//store ammount of elements
+89
+2	//SORT: load number of elements into AC
+89
+10	//move number of elements to X
+2
+92	//load number of sorted elements into AC
+6	//subtract X from AC
+15	//goto Print: if (sorted == elements) print list and end
+68	
+2	//else: find next minimum
+90
+11	//move next minimum to Y
+2	//SORTING: load iterator into AC, will iterate through unsorted list
+91
+10	//move iterator to X
+21	//load next element from unsorted list
+93
+15	//if: its the last element 0: increase next Minimum and repeat
+58
+7	//Else: subtract next minimum from element in list
+15	//goto STORE: if (unsorted[X] == minimum): store on stack
+40
+19	//CONTINUE: get next element in unsorted list
+12
+3	//save iterator
+91
+14	//loop back to SORTING
+24
+21	//STORE: reload destroyed element into AC
+93
+23	//push AC onto stack
+12
+3	//save iterator
+91
+2	//load number of sorted elements
+92
+10	//move number of sorted elements to X
+19	//increase number of sorted elements by 1
+12	//move to AC
+3	//save updated value of sorted
+92
+2	//load iterator back into AC
+91
+10	//move iterator back to X
+14	//goto continue iterating through list
+34
+3	//INCMIN: increase Minimum, reset iterator
+91
+13	//move nxtMin from Y to AC
+10	//move nextMin from AC to X
+19	//inc nextMin by 1
+12	//move X to AC
+3	//save updated value of next minimum
+90
+14	//goto SORT: restart process
+13
+1	//PRINT: end the process
+0	//load 0 into AC to iterate through sorted list
+3	//reset iterator = 0
+91
+10	//move value of iterator to X
+2	//NEXTPRINT: get value of number of sorted elements in AC
+92
+6	//subtract X from AC
+15	//all elements are printed end the process
+88
+24	//pop first element in sorted list from stack
+9	//write element to screen
+1	
+1	//load newline character
+10
+9	//print newline to screen as character
+2
+19	//increment iterator
+14	//goto NextPrint
+73
+50	//END
+0	//element: elements in list
+1	//next minimum
+0	//iterator
+0	//sorted: number of elements already sorted
+3	//unsorted list with numbers between 1-100
+1
+5
+15
+14
+32
+87
+7
+32
+64
+12
+2
+0

@@ -1,0 +1,10 @@
+LastName,FirstName,Exam1, Asg1, Asg2, Exam2, Asg3, Asg4
+Karr, Arlen, 91, 86, 94, 100, 98, 93
+Stotz, Ralph, 81,83,,93, 78,,
+Yi, Master, 100, 100, 0, 100, 100, 100
+Rao, Sista, 91, 86, 94, 100, 98, 93
+Christopher, Thomas, 78, 79, 82, 88, 78, 91
+McClurg, Andrew, 91, 87, 99, 87,,93
+Noble, Rich, 84, 79, 85, 88, 90, 91
+Cole, John, 100, 100, 100, 100, 100, 100
+Niggers, Fuck, 0, 0, 0, 28, 0, 0

@@ -1,0 +1,23 @@
+Client:			Server:
+				start
+				open connections
+start
+connect
+				Acknowledge connection
+Connected
+Prompt user
+Send Request (1)	
+				Process Request
+				Send Feedback (2)
+process feedback
+prompt user
+send exit
+exit
+				exit
+				
+(1) The Client will send a value to the server indicating
+	what it wants the server to do.
+	
+(2) The server will send a value back to the client, either
+	confirming that it is ready for the next request, or the
+	value that was requested by the client.
